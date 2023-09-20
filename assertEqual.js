@@ -1,8 +1,7 @@
 
 
-const countOnly = function(allItems, itemsToCount) {
 
-}
+
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
     if ((actual  === expected)) {
