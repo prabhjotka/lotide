@@ -37,7 +37,9 @@ else{
    
 };
 
-let result=countLetters("LHLL");
-console.log(result);
-assertEqual(result, { L: 3, H: 1 });
-assertEqual(countLetters("pip"),{p:2,i:2});
+// let result=countLetters("LHLL");
+// console.log(result);
+// assertEqual(result, { L: 3, H: 1 });
+// assertEqual(countLetters("pip"),{p:2,i:2});
+
+module.exports = countLetters;

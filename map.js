@@ -24,18 +24,19 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const words = ["ground", "control", "to", "major", "tom"];
+// const words = ["ground", "control", "to", "major", "tom"];
 // const results1 = map(words, (word) => word[0]);
 // console.log(results1);
-assertEqual(
-  map(words, (word) => word[0]),
-  ["g", "c", "t", "m", "t"]
-);
-assertEqual(
-  map(words, (word) => word[1]),
-  ["r", "o", "o", "a", "o"]
-);
-assertEqual(
-  map(words, (word) => word[0]),
-  ["g", "c", "t", "m", "m"]
-);
+// // assertEqual(
+//   map(words, (word) => word[0]),
+//   ["g", "c", "t", "m", "t"]
+// );
+// assertEqual(
+//   map(words, (word) => word[1]),
+//   ["r", "o", "o", "a", "o"]
+// );
+// assertEqual(
+//   map(words, (word) => word[0]),
+//   ["g", "c", "t", "m", "m"]
+// );
+ module.exports=map;

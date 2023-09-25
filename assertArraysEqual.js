@@ -1,12 +1,7 @@
-function eqArrays(arr1,arr2) {
-    if (arr1.length === 0 && arr2.length===0) {
-      return undefined; // Return undefined for empty arrays
-    }
-    return JSON.stringify(arr1) === JSON.stringify(arr2);
-   
-  }
+const eqArrays = require('./eqArrays');
 
-  const assertEqual = function(actual, expected) {
+
+  const assertArraysEqual = function(actual, expected) {
     const result=eqArrays(actual,expected);
     if(result)
     {
@@ -18,5 +13,4 @@ else{
 }
    
 };
-assertEqual([1, 2, 3], [1, 2, 8]);
-assertEqual([1, 2, 3], [1, 2, 3]);
+module.exports = assertArraysEqual;

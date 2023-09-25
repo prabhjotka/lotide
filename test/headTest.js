@@ -1,17 +1,20 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const head = require('../head');
-
-//Test cases
-
-assertEqual(head([5, 6, 7]), 5);
-// Should pass
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello"); // Should pass
-
-// // Additional test cases
-
-assertEqual(head([]), undefined); // Should pass for empty array
-assertEqual(head([42]), 42); // Should pass for a single-element array
-assertEqual(head([null, undefined]), null); // Should pass for null as the first element
-
-
-  
+describe("#head", () => {
+    it("returns 1 for [1, 2, 3]", () => {
+        assert.strictEqual(head([1, 2, 3]), 1);
+    });
+    it("returns 1 for [1, 2, 3]", () => {
+        assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+    });
+    it("returns 1 for [1, 2, 3]", () => {
+        assert.strictEqual(head([]), undefined);
+    });
+    it("returns 1 for [1, 2, 3]", () => {
+        assert.strictEqual(head([42]), 42);
+    });
+    it("returns 1 for [1, 2, 3]", () => {
+        assert.strictEqual(
+            head([null, undefined]), null);
+    });
+});

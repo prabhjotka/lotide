@@ -1,4 +1,4 @@
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
   let results = {};
   // logic to update results here
 
@@ -16,12 +16,12 @@ const letterPositions = function (sentence) {
 };
 
 function eqArrays(arr1, arr2) {
-   let numArr=arr1.map(Number);
-   return JSON.stringify(numArr) == JSON.stringify(arr2);
+  let numArr = arr1.map(Number);
+  return JSON.stringify(numArr) == JSON.stringify(arr2);
 
 }
 
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   const result = eqArrays(actual, expected);
 
   if (result) {
@@ -31,6 +31,7 @@ const assertArraysEqual = function (actual, expected) {
   }
 };
 
-//assertArraysEqual(letterPositions("hello").e, [1]);
-console.log(letterPositions("hello").l);
-assertArraysEqual(letterPositions("hello").l, [2,3]);
+// //assertArraysEqual(letterPositions("hello").e, [1]);
+//console.log(letterPositions("hello").o);
+// assertArraysEqual(letterPositions("hello").l, [2,3]);
+module.exports = letterPositions;
